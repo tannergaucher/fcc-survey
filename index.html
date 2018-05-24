@@ -9,39 +9,38 @@
 </head>
 
 <body>
-  <div id="title" class="">
-    <h1>FCC Feedback</h1>
+
+  <h1 id="title" >FCC Feedback</h1>
+  <div>
+    <p id="description">Help us improve</p>
   </div>
-  <div id="description" class="">
-    <h4>Help us improve</h4>
-  </div>
-  <div id="main" class="main">
-    <div id="survey-form" class="">
-      <div id="name" class="row">
-        <div id="name-label" class="">Name</div>
-        <input type="text" name="" placeholder="Enter your name">
+  <div id="main">
+    <form id="survey-form">
+      <div id="name-row" class="row">
+        <label id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
       </div>
 
-      <div id="email" class="row">
-        <div id="email-label" class="">Email</div>
-        <input type="text" name="" placeholder="Enter your Email">
+      <div id="email-row" class="row">
+        <label id="email-label" class="">Email</label>
+        <input id="email" type="email" placeholder="Enter your Email" required>
       </div>
 
-      <div id="number" class="row">
-        <div id="number-label" class="">Age</div>
-        <input type="number" name="" placeholder="What's my age again?">
+      <div id="number-row" class="row">
+        <label id="number-label" class="">Age</label>
+        <input id="number" type="number" min="1" max="134" placeholder="What's my age again?">
       </div>
 
       <div id="role" class="row">
         <div id="title-label" class="">What best describes your current role?</div>
         <select name="text">
-          <optgroup label="">
+          <optgroup>
             <option value="" selected>Select an option</option>
-            <option value="">Student</option> 
-            <option value="" >Part-time learner</option>
-            <option value="">Full- time learner</option>
-            <option value="">Aint tellin' you</option>
-            <option value="">Other</option>
+            <option value="student">Student</option> 
+            <option value="part-time" >Part-time learner</option>
+            <option value="full-time">Full- time learner</option>
+            <option value="aint tellin">Aint tellin' you</option>
+            <option value="other">Other</option>
           </optgroup>
           </select>
       </div>
@@ -49,63 +48,63 @@
       <div id="reccomend" class="row">
         <div id="reccomend-label" class="">How likely are you to recommend FCC to a friend?</div>
         <div class="reccomend-options">
-          <input type="radio" id="radioButton"><label for="">Definitely</label>
-          <input type="radio" id="radioButton"><label for="">Maybe</label>
-          <input type="radio" id="radioButton"><label for="">Nope</label>
+          <input type="radio" name="reccomend" value="Definitely"><label for="">Definitely</label>
+          <input type="radio" name="reccomend" value="Maybe"><label for="">Maybe</label>
+          <input type="radio" name="reccomend" value="Nope"><label for="">Nope</label>
         </div>
       </div>
 
       <div id="like" class="row">
         <div id="like-label" class="">What do you like most about FCC</div>
         <select id="dropdown" name="text">
-            <option value="" selected>Select an option</option>
-            <option value="">Challenges</option> 
-            <option value="" >Projects</option>
-            <option value="">Community</option>
-            <option value="">Open source</option>
-            <option value="">Dat green color</option>
+            <option name="like" value="Select an option" selected>Select an option</option>
+            <option name="like" value="Challenges">Challenges</option> 
+            <option name="like" value="Projects" >Projects</option>
+            <option name="like" value="Community">Community</option>
+            <option name="like" value="Open Source">Open source</option>
+            <option name="like" value="Dat green color">Dat green color</option>
           </select>
       </div>
 
       <div id="improve" class="row">
-        <div id="improve-label" class="">Things to improve</div>
-        <div id="improve-options" class="">
+        <div id="improve-label">Things to improve</div>
+        <div id="improve-options" class="row">
           <div class="">
-            <input type="checkbox" id="radioButton"><label for="">Applied Responsive web design projects</label>
+            <input type="checkbox" id="radioButton" value="Applied Responsive web design projects"><label for="">Applied Responsive web design projects</label>
           </div>
           <div class="">
-            <input type="checkbox" id="radioButton"><label for="">Javascript Algorithms and data structures projects</label>
+            <input type="checkbox" id="radioButton" value="Javascript Algorithms and data structures projects"><label for="">Javascript Algorithms and data structures projects</label>
           </div>
           <div class="">
-            <input type="checkbox" id="radioButton"><label for="">Front End Libraries projects</label>
+            <input type="checkbox" id="radioButton" value="Front End Libraries projects"><label for="">Front End Libraries projects</label>
           </div>
           <div class="">
-            <input type="checkbox" id="radioButton"><label for="">Data Visualization projects</label>
+            <input type="checkbox" id="radioButton" value="Data Visualization projects"><label for="">Data Visualization projects</label>
           </div>
           <div class="">
-            <input type="checkbox" id="radioButton"><label for="">Apis and Microservices projects</label>
+            <input type="checkbox" id="radioButton" value="Apis and Microservices projects"><label for="">Apis and Microservices projects</label>
           </div>
           <div class="">
-            <input type="checkbox" id="radioButton"><label for="">Information and Quality Assurance</label>
+            <input type="checkbox" id="radioButton" value="Information and Quality Assurance"><label for="">Information and Quality Assurance</label>
           </div>
           <div class="">
-            <input type="checkbox" id="radioButton"><label for="">Open Source</label>
+            <input type="checkbox" id="radioButton" value="Open Source"><label for="">Open Source</label>
           </div>
           <div class="">
-            <input type="checkbox" id="radioButton"><label for="">That green color</label>
+            <input type="checkbox" id="radioButton" value="That green color"><label for="">That green color</label>
           </div>
         </div>
       </div>
 
       <div id="comments" class="row">
-        <label for="">Comments or Suggestions?</label>
+        <label>Comments or Suggestions?</label>
         <textarea name="name" rows="7" cols="50" placeholder=""></textarea>
       </div>
-
-      <button type="button" name="button">Submit</button>
-    </div>
+      <input id="submit" type="submit"></input>
+    </form>
   </div>
   <script src="js/index.js"></script>
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </body>
 
 </html>

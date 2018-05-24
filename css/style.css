@@ -1,5 +1,5 @@
-.main {
-  width: 900px;
+#main {
+  width: 500px;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -10,7 +10,6 @@
   text-align: center;
   font-size: 14px;
   display: flex;
-  justify-content: center;
 }
 
 * {
@@ -18,14 +17,12 @@
   font-family: 'Lato', sans-serif;
 }
 
-input {
-  height: 24px;
-  font-size: 18px;
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-#dropdown {
-  font-size: 14px;
-}
 
 #title {
   display: flex;
@@ -42,57 +39,27 @@ input {
   margin: 20px;
 }
 
-#name {
-  display: flex;
-}
-
-#email {
-  display: flex;
-}
-
-#number {
-  display: flex;
-}
-
 #role {
   display: flex;
   margin-top: 20px
-}
-
-#reccomend {
-  display: flex;
-}
-
-#like {
-  display: flex;
-}
-
-#improve {
-  display: flex;
-  margin-top: 20px;
 }
 
 #improve-label {
   margin-right: 70px;
 }
 
-#improve-options {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+#comments label {
+  margin-right: 10px;
 }
 
 #comments {
-  display: flex;
-}
-
-#comments label {
-  margin-right: 10px;
+  margin-right: auto;
 }
 
 textarea {
   margin-top: 30px;
   flex-shrink: 1;
+  width: 100%;
 }
 
 button {
@@ -117,9 +84,7 @@ button {
   .main {
     width: 100%;
   }
-  .row {
-    flex-direction: column;
-  }
+
   input {
     width: 100%;
     padding: 5px;
